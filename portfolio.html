@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/css.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header conteiner">
+        <!-- logo -->
+        <a class="logo">Web<span class="logo__studio">Studio</span></a>
+        <!-- site-nav -->
+        <nav>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__list">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__list curent"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__list">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- site-auth -->
+        <ul class="site-auth">
+          <li href="/" class="site-auth__item">
+            <a class="site-auth__list">
+              <svg class="site-auth__svg" width="15" height="15">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li href="/" class="site-auth__item">
+            <a class="site-auth__list">
+              <svg class="site-auth__svg" width="15" height="15">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+380991111111</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <section class="portfolio-section conteiner">
+      <!-- Button -->
+      <ul class="porpfolio-button">
+        <li class="porpfolio-button__item">
+          <button class="porpfolio-button__list" type="button" href="">
+            Все
+          </button>
+        </li>
+        <li class="porpfolio-button__item">
+          <button class="porpfolio-button__list" type="button" href="">
+            Веб-сайты
+          </button>
+        </li>
+        <li class="porpfolio-button__item">
+          <button class="porpfolio-button__list" type="button" href="">
+            Приложения
+          </button>
+        </li>
+        <li class="porpfolio-button__item">
+          <button class="porpfolio-button__list" type="button" href="">
+            Дизайн
+          </button>
+        </li>
+        <li class="porpfolio-button__item">
+          <button class="porpfolio-button__list" type="button" href="">
+            Маркетинг
+          </button>
+        </li>
+      </ul>
+
+      <!-- Images -->
+      <ul class="porpfolio-photo">
+        <li class="porpfolio-photo__item">
+          <div class="porpfolio-photo__list">
+            <a class="porpfolio-photo__img" href="">
+              <img
+                src="./images/portfolio1.jpg"
+                width="370"
+                height="294"
+                alt=""
+              />
+            </a>
+            <p class="porpfolio-photo__hover">
+              Ресурс предлагает комплексные предложения с разным уровнем
+              функционала и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.
+            </p>
+          </div>
+          <div class="porpfolio-photo__info">
+            <p class="porpfolio-photo__name">Технокряк</p>
+            <p class="porpfolio-photo__type">Веб-сайт</p>
+          </div>
+        </li>
+        <li class="porpfolio-photo__item">
+          <div class="porpfolio-photo__list">
+            <a class="porpfolio-photo__img" href="">
+              <img
+                src="./images/portfolio2.jpg"
+                width="370"
+                height="294"
+                alt=""
+              />
+            </a>
+            <p class="porpfolio-photo__hover">
+              Ресурс предлагает комплексные предложения с разным уровнем
+              функционала и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.
+            </p>
+          </div>
+          <div class="porpfolio-photo__info">
+            <p class="porpfolio-photo__name">
+              Постер New Orlean vs Golden Star
+            </p>
+            <p class="porpfolio-photo__type">Дизайн</p>
+          </div>
+        </li>
+        <li class="porpfolio-photo__item">
+          <div class="porpfolio-photo__list">
+            <a class="porpfolio-photo__img" href="">
+              <img
+                src="./images/portfolio3.jpg"
+                width="370"
+                height="294"
+                alt=""
+              />
+            </a>
+            <p class="porpfolio-photo__hover">
+              Ресурс предлагает комплексные предложения с разным уровнем
+              функционала и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.
+            </p>
+          </div>
+          <div class="porpfolio-photo__info">
+            <p class="porpfolio-photo__name">Ресторан Seafood</p>
+            <p class="porpfolio-photo__type">Приложение</p>
+          </div>
+        </li>
+        <li class="porpfolio-photo__item">
+          <div class="porpfolio-photo__list">
+            <a class="porpfolio-photo__img" href="">
+              <img
+                src="./images/portfolio4.jpg"
+                width="370"
+                height="294"
+                alt=""
+              />
+            </a>
+            <p class="porpfolio-photo__hover">
+              Ресурс предлагает комплексные предложения с разным уровнем
+              функционала и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.
+            </p>
+          </div>
+          <div class="porpfolio-photo__info">
+            <p class="porpfolio-photo__name">Проект Prime</p>
+            <p class="porpfolio-photo__type">Маркетинг</p>
+          </div>
+        </li>
+        <li class="porpfolio-photo__item">
+          <div class="porpfolio-photo__list">
+            <a class="porpfolio-photo__img" href="">
+              <img
+                src="./images/portfolio5.jpg"
+                width="370"
+                height="294"
+                alt=""
+              />
+            </a>
+            <p class="porpfolio-photo__hover">
+              Ресурс предлагает комплексные предложения с разным уровнем
+              функционала и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.
+            </p>
+          </div>
+          <div class="porpfolio-photo__info">
+            <p class="porpfolio-photo__name">Проект Boxes</p>
+            <p class="porpfolio-photo__type">Приложение</p>
+          </div>
+        </li>
+        <li class="porpfolio-photo__item">
+          <div class="porpfolio-photo__list">
+            <a class="porpfolio-photo__img" href="">
+              <img
+                src="./images/portfolio6.jpg"
+                width="370"
+                height="294"
+                alt=""
+              />
+            </a>
+            <p class="porpfolio-photo__hover">
+              Ресурс предлагает комплексные предложения с разным уровнем
+              функционала и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.
+            </p>
+          </div>
+          <div class="porpfolio-photo__info">
+            <p class="porpfolio-photo__name">Inspiration has no Borders</p>
+            <p class="porpfolio-photo__type">Веб-сайт</p>
+          </div>
+        </li>
+        <li class="porpfolio-photo__item">
+          <div class="porpfolio-photo__list">
+            <a class="porpfolio-photo__img" href="">
+              <img
+                src="./images/portfolio7.jpg"
+                width="370"
+                height="294"
+                alt=""
+              />
+            </a>
+            <p class="porpfolio-photo__hover">
+              Ресурс предлагает комплексные предложения с разным уровнем
+              функционала и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.
+            </p>
+          </div>
+          <div class="porpfolio-photo__info">
+            <p class="porpfolio-photo__name">Издание Limited Edition</p>
+            <p class="porpfolio-photo__type">Дизайн</p>
+          </div>
+        </li>
+        <li class="porpfolio-photo__item">
+          <div class="porpfolio-photo__list">
+            <a class="porpfolio-photo__img" href="">
+              <img
+                src="./images/portfolio8.jpg"
+                width="370"
+                height="294"
+                alt=""
+              />
+            </a>
+            <p class="porpfolio-photo__hover">
+              Ресурс предлагает комплексные предложения с разным уровнем
+              функционала и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.
+            </p>
+          </div>
+          <div class="porpfolio-photo__info">
+            <p class="porpfolio-photo__name">Проект LAB</p>
+            <p class="porpfolio-photo__type">Маркетинг</p>
+          </div>
+        </li>
+        <li class="porpfolio-photo__item">
+          <div class="porpfolio-photo__list">
+            <a class="porpfolio-photo__img" href="">
+              <img
+                src="./images/portfolio9.jpg"
+                width="370"
+                height="294"
+                alt=""
+              />
+            </a>
+            <p class="porpfolio-photo__hover">
+              Ресурс предлагает комплексные предложения с разным уровнем
+              функционала и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.
+            </p>
+          </div>
+          <div class="porpfolio-photo__info">
+            <p class="porpfolio-photo__name">Growing Business</p>
+            <p class="porpfolio-photo__type">Приложение</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer conteiner">
+        <!-- Footer info -->
+        <div class="info">
+          <a class="logo">Web<span class="logo__studio">Studio</span></a>
+          <ul class="force">
+            <li class="force__item">
+              <a class="force__list_a">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="force__item">
+              <a class="force__list">info@example.com</a>
+            </li>
+            <li class="force__item">
+              <a class="force__list">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Content -->
+        <div class="conect">
+          <p class="conect__text">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <ul class="conect__item">
+            <li class="conect__list">
+              <a href="." class="conect__force">
+                <svg class="conect__svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="conect__list">
+              <a href="." class="conect__force">
+                <svg class="conect__svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="conect__list">
+              <a href="." class="conect__force">
+                <svg class="conect__svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="conect__list">
+              <a href="." class="conect__force">
+                <svg class="conect__svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="join">
+          <p class="join__text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          <div class="join__content">
+            <input
+              class="join__input"
+              type="text"
+              name="user-email-dwd"
+              placeholder="E-mail"
+            />
+            <button class="join__button">
+              Подписаться
+              <svg class="join__svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
