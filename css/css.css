@@ -340,8 +340,8 @@
 /* Hero */
 .hero {
   position: relative;
-  /* display: flexbox; */
   min-height: 600px;
+  min-width: 1600px;
 
   background-image: linear-gradient(
       to right,
