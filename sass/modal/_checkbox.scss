@@ -1,0 +1,55 @@
+.modal-window__checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  .modal-window__checkbox__check {
+    position: absolute;
+    left: 5px;
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+  }
+  .modal-window__checkbox__consent {
+    display: block;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-color);
+  }
+  .modal-window__checkbox__force {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--akcent);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.modal-window__checkbox__consent::before {
+  position: absolute;
+  content: "";
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+.modal-window__checkbox__check:checked
+  + .modal-window__checkbox__consent::before {
+  border: none;
+  background-color: var(--akcent);
+  background-image: url(../images/checkbox.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}

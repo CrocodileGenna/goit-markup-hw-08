@@ -1,0 +1,48 @@
+.force {
+  display: block;
+  .force__item {
+    display: block;
+  }
+}
+
+.force__list_a {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  color: var(--secondary-color-two);
+  /* @include fond(500, 14px, 1.14, 0.02em); */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--akcent);
+  }
+}
+
+.force__list {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  color: var(--secondary-color);
+  /* @include fond(500, 14px, 1.14, 0.02em); */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--akcent);
+  }
+}

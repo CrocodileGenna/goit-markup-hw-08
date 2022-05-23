@@ -1,0 +1,78 @@
+.modal-window__input {
+  margin-top: 10px;
+  .modal-window__input__label {
+    display: block;
+    margin-bottom: 4px;
+
+    color: #757575;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+  }
+  //Nested
+  .modal-window__input__nested {
+    position: relative;
+    .modal-window__input__in {
+      padding-left: 42px;
+      width: 448px;
+      height: 40px;
+      outline: none;
+
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+
+      transition-property: border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        border: 1px solid var(--akcent);
+      }
+    }
+    .modal-window__input__svg {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .modal-window__input__in:hover:hover + .modal-window__input__svg,
+    .modal-window__input__in:hover:focus + .modal-window__input__svg,
+    .modal-window__input__in:focus:hover + .modal-window__input__svg,
+    .modal-window__input__in:focus:focus + .modal-window__input__svg {
+      fill: var(--akcent);
+    }
+  }
+  //Coments
+  .modal-window__input__coments {
+    display: block;
+    margin-bottom: 4px;
+    padding: 10px;
+
+    width: 448px;
+    height: 120px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: none;
+    resize: none;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border: 1px solid var(--akcent);
+    }
+  }
+}

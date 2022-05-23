@@ -69,9 +69,9 @@ li {
   /* outline: 2px solid rgb(225, 169, 159); */
 }
 
-/* @mixin fond($fw, $fs, $fh, $ls) {
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: $fh;
-    letter-spacing: $ls;
-  } */
+@mixin fond($fw, $fs, $fh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $fh;
+  letter-spacing: $ls;
+}

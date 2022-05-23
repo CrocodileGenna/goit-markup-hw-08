@@ -1,1 +1,36 @@
 @import "root/root";
+
+//Header
+@import "header/header";
+@import "header/logo";
+@import "header/site-nav";
+@import "header/site-auth";
+
+//Footer
+@import "footer/footer";
+@import "footer/logo";
+@import "footer/force";
+@import "footer/conect";
+@import "footer/join";
+
+//One Page
+@import "one_page/hero";
+@import "one_page/work";
+@import "one_page/photo";
+@import "one_page/team";
+@import "one_page/clients";
+
+//Two Page
+@import "two_page/portfolio-section";
+@import "two_page/portfolio-button";
+@import "two_page/portfolio-photo";
+
+//Modal
+@import "modal/backdrop";
+@import "modal/modal-window";
+@import "modal/modal-window_close";
+@import "modal/modal-window_form";
+@import "modal/modal-window_input";
+@import "modal/modal-window_input_nested";
+@import "modal/modal-window_input_coments.scss";
+@import "modal/checkbox";

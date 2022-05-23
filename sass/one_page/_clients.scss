@@ -1,0 +1,50 @@
+.clients.conteiner {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  .clients__main {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+.client {
+  display: flex;
+  margin-top: 50px;
+  .client__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .client__item {
+    .client__force {
+      position: relative;
+      display: block;
+      width: 170px;
+      height: 92px;
+      color: #afb1b8;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+
+      transition-property: color background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: var(--akcent);
+        border: 1px solid var(--akcent);
+      }
+
+      .client__svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        fill: currentColor;
+      }
+    }
+  }
+}

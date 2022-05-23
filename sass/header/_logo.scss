@@ -1,0 +1,23 @@
+.logo {
+  padding: 0;
+  margin-right: 93px;
+
+  color: var(--akcent);
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  /* @include fond(700, 26px, 1.2, null); */
+  .logo__studio {
+    color: var(--primery-text-cplor);
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    /* @include fond(700, 26px, 1.2, null); */
+  }
+}
