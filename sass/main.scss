@@ -2,13 +2,11 @@
 
 //Header
 @import "header/header";
-@import "header/logo";
 @import "header/site-nav";
 @import "header/site-auth";
 
 //Footer
 @import "footer/footer";
-@import "footer/logo";
 @import "footer/force";
 @import "footer/conect";
 @import "footer/join";
@@ -31,6 +29,4 @@
 @import "modal/modal-window_close";
 @import "modal/modal-window_form";
 @import "modal/modal-window_input";
-@import "modal/modal-window_input_nested";
-@import "modal/modal-window_input_coments.scss";
 @import "modal/checkbox";

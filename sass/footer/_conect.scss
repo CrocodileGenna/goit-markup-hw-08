@@ -1,10 +1,12 @@
 .conect {
-  display: block;
-  margin-left: 70px;
-  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 480px) {
+    align-items: center;
+  }
+  // margin-top: -30px;
   .conect__text {
-    display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 
     color: var(--primary-wite-color);
     font-weight: 600;
@@ -15,9 +17,10 @@
   }
   .conect__item {
     display: flex;
-    .conect__list:not(:last-child) {
-      margin-right: 10px;
-    }
+    justify-content: space-between;
+  }
+  .conect__list:not(:last-child) {
+    margin-right: 10px;
   }
 }
 

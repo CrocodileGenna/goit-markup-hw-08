@@ -1,15 +1,27 @@
 .work__item {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  .work__list:not(:last-child) {
-    margin-right: 30px;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  justify-content: space-between;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
   }
+  // .work__list:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   .work__list {
+    width: 270px;
+    @media screen and (max-width: 480px) {
+      display: flex;
+      width: 100%;
+      margin-top: 5%;
+      flex-direction: column;
+      align-items: center;
+    }
     .work__fon {
       position: relative;
       display: block;
-      width: 270px;
+      width: 100%;
       height: 120px;
 
       background: #f5f4fa;
@@ -24,7 +36,7 @@
 
     .work__main {
       display: block;
-      margin-top: 30px;
+      margin-top: 5%;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
@@ -36,7 +48,7 @@
 
     .work__text {
       display: block;
-      margin-top: 10px;
+      margin-top: 2%;
 
       font-family: "Roboto";
       font-style: normal;

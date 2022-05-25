@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   min-height: 600px;
-  min-width: 1600px;
+  max-width: 1600px;
 
   background-image: linear-gradient(
       to right,
@@ -17,11 +17,12 @@
 }
 .hero__block {
   position: absolute;
+  width: 60%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   .hero__text {
-    max-width: 700px;
+    width: 100%;
 
     color: var(--primary-wite-color);
     font-family: "Roboto";
@@ -30,6 +31,10 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
 
   .hero__button {

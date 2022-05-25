@@ -1,6 +1,9 @@
 .site-auth {
   display: flex;
   margin-left: auto;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
   .site-auth__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -10,8 +13,8 @@
   position: relative;
 
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   align-items: center;
 
   color: var(--secondary-color);

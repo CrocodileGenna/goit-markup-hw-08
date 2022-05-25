@@ -1,7 +1,9 @@
 .force {
-  display: block;
-  .force__item {
-    display: block;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  @media screen and (max-width: 480px) {
+    align-items: center;
   }
 }
 
