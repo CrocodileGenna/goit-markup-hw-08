@@ -4,8 +4,14 @@
   @media screen and (max-width: 480px) {
     display: none;
   }
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    flex-direction: column;
+  }
   .site-auth__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 10%;
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
+      margin: 0;
+    }
   }
 }
 
@@ -28,6 +34,9 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    padding: 4% 0;
+  }
   &:hover,
   &:focus {
     color: var(--akcent);

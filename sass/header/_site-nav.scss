@@ -5,12 +5,11 @@
     display: none;
   }
   .site-nav__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 25%;
   }
 }
 
 .site-nav__list {
-  display: inline-block;
   position: relative;
   // padding-top: 32px;
   // padding-bottom: 32px;
@@ -26,6 +25,7 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     color: var(--akcent);

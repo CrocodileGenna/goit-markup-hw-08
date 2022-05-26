@@ -27,9 +27,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   .client__item {
     width: 170px;
     @media screen and (max-width: 480px) {
+      margin-bottom: 5%;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
       margin-bottom: 5%;
     }
     .client__force {

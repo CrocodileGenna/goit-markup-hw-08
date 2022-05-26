@@ -6,6 +6,9 @@
   @media screen and (max-width: 480px) {
     flex-direction: column;
   }
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
   // .work__list:not(:last-child) {
   //   margin-right: 30px;
   // }
@@ -17,6 +20,9 @@
       margin-top: 5%;
       flex-direction: column;
       align-items: center;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
+      margin-bottom: 2%;
     }
     .work__fon {
       position: relative;
