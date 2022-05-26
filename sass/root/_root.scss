@@ -60,22 +60,22 @@ li {
 }
 
 .conteiner {
-  max-width: 80%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   /* outline: 2px solid rgb(225, 169, 159); */
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 579px) {
     max-width: 100%;
     padding-left: 3%;
     padding-right: 3%;
   }
-  @media screen and (min-width: 480px) and (max-width: 1200px) {
-    max-width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
+  @media screen and (min-width: 579px) and (max-width: 1400px) {
+    max-width: 95%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   // @media screen and (max-width: 768px) {
   //   max-width: 100%;

@@ -17,6 +17,9 @@
     font-size: 26px;
     line-height: 1.2;
     /* @include fond(700, 26px, 1.2, null); */
+    @media screen and (min-width: 579px) and (max-width: 769px) {
+      margin-right: 5%;
+    }
     .logo__studio {
       color: var(--primery-text-cplor);
       font-family: Raleway, sans-serif;

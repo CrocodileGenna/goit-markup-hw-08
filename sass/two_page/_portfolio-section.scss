@@ -1,17 +1,17 @@
 .portfolio-section {
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 7%;
+  padding-bottom: 7%;
   .porpfolio-button {
     display: flex;
     margin-bottom: 4%;
     justify-content: center;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 579px) {
       flex-wrap: wrap;
       justify-content: flex-start;
     }
     .porpfolio-button__item:not(:last-child) {
       margin-right: 3%;
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 579px) {
         margin-bottom: 3%;
       }
     }
