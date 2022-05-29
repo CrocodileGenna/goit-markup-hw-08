@@ -11,23 +11,31 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
-    height: 590px;
+    height: 609px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    width: 450px;
+    height: 609px;
   }
   //Close
   .modal-window__close-position {
     position: relative;
-    width: 528px;
-    height: 581px;
-    @media screen and (max-width: 480px) {
+    width: 450px;
+    height: 609px;
+    @media screen and (max-width: 767px) {
       width: 450px;
-      height: 590px;
+      height: 609px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      width: 450px;
+      height: 609px;
     }
     .modal-window__close {
       position: absolute;
-      right: 1%;
-      top: 1%;
+      right: 5px;
+      top: 5px;
 
       width: 30px;
       height: 30px;
@@ -48,8 +56,9 @@
 
   //Form
   .modal-window__form {
-    padding: 8%;
+    padding: 40px;
     .modal-window__form__title {
+      margin-bottom: 12px;
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
@@ -62,7 +71,7 @@
   //Suubmit
   .modal-window__submit {
     display: block;
-    margin-top: 7%;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 

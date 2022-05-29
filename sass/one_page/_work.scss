@@ -1,29 +1,48 @@
 .work__item {
   display: flex;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  justify-content: space-around;
-  @media screen and (max-width: 579px) {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
     flex-direction: column;
   }
-  @media screen and (min-width: 579px) and (max-width: 1400px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
     flex-wrap: wrap;
   }
+  // @media screen and (min-width: 480px) and (max-width: 1400px) {
+  //   flex-wrap: wrap;
+  // }
   // .work__list:not(:last-child) {
   //   margin-right: 30px;
   // }
   .work__list {
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      margin-bottom: 30px;
+    }
+  }
+  .work__list:not(:first-child) {
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+  .work__list {
     width: 270px;
-    @media screen and (max-width: 579px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       width: 100%;
-      margin-top: 5%;
       flex-direction: column;
       align-items: center;
     }
-    @media screen and (min-width: 579px) and (max-width: 1400px) {
-      margin-bottom: 2%;
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      width: 354px;
     }
+    // @media screen and (min-width: 579px) and (max-width: 1400px) {
+    //   margin-bottom: 2%;
+    // }
     .work__fon {
       position: relative;
       display: block;
@@ -42,7 +61,7 @@
 
     .work__main {
       display: block;
-      margin-top: 5%;
+      margin-top: 30px;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
@@ -54,8 +73,9 @@
 
     .work__text {
       display: block;
-      margin-top: 2%;
+      margin-top: 10px;
 
+      color: #757575;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 400;

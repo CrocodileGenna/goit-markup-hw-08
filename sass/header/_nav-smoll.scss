@@ -1,0 +1,22 @@
+.nav-smoll {
+  position: relative;
+  display: none;
+  margin-left: auto;
+  z-index: 2;
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
+}
+.nav-smoll__button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  background-color: white;
+  //   outline: 1px splid tomato;
+}
+.nav-smoll__site-nav {
+  opacity: 0;
+}
+.nav-smoll__site-auth {
+  opacity: 0;
+}

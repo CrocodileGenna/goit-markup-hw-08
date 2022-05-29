@@ -8,10 +8,10 @@
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
-  @media screen and (max-width: 579px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 579px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     display: none;
   }
 }
@@ -21,10 +21,10 @@
   padding-top: 6%;
   padding-bottom: 6%;
   justify-content: space-evenly;
-  @media screen and (max-width: 579px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 579px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     display: none;
   }
   .photo__item:not(:last-child) {

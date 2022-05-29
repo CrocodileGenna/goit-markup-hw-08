@@ -1,19 +1,22 @@
 .site-nav {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 679px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
   .site-nav__item:not(:last-child) {
-    margin-right: 25%;
+    margin-right: 50px;
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      margin-right: 40px;
+    }
   }
 }
 
 .site-nav__list {
   position: relative;
   padding-top: 33px;
-  padding-bottom: 34px;
+  padding-bottom: 33px;
 
   color: var(--primery-text-cplor);
   /* @include fond(500, 14px, 1.14, 0.02em); */
@@ -27,6 +30,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
   &:hover,
   &:focus {
     color: var(--akcent);

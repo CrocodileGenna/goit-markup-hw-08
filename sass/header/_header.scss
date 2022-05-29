@@ -4,10 +4,13 @@
     display: flex;
     height: 80px;
     align-items: center;
+    @media screen and (max-width: 1280px) {
+      height: 60px;
+    }
   }
   .logo {
     padding: 0;
-    margin-right: 12%;
+    margin-right: 93px;
 
     color: var(--akcent);
     font-family: Raleway, sans-serif;
@@ -16,10 +19,14 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    /* @include fond(700, 26px, 1.2, null); */
-    @media screen and (min-width: 579px) and (max-width: 769px) {
-      margin-right: 5%;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 1.2;
     }
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      margin-right: 75px;
+    }
+    /* @include fond(700, 26px, 1.2, null); */
     .logo__studio {
       color: var(--primery-text-cplor);
       font-family: Raleway, sans-serif;
@@ -28,6 +35,14 @@
       font-weight: 700;
       font-size: 26px;
       line-height: 1.2;
+      @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.2;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1280px) {
+        font-size: 24px;
+        line-height: 1.2;
+      }
       /* @include fond(700, 26px, 1.2, null); */
     }
   }

@@ -1,16 +1,20 @@
 .join {
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 579px) {
+  @media screen and (max-width: 767px) {
     align-items: center;
   }
-  @media screen and (min-width: 579px) and (max-width: 1400px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     align-items: center;
-    justify-content: center;
-    margin-bottom: 2%;
   }
+
+  // @media screen and (min-width: 480px) and (max-width: 1200px) {
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin-bottom: 2%;
+  // }
   .join__text {
-    margin-bottom: 3%;
+    margin-bottom: 20px;
 
     color: var(--primary-wite-color);
     font-weight: 600;
@@ -23,13 +27,18 @@
 
 .join__content {
   display: flex;
-  @media screen and (max-width: 579px) {
+  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     flex-direction: column;
     align-items: center;
   }
 
   .join__input {
-    padding-left: 3%;
+    padding-left: 15px;
     width: 358px;
     height: 50px;
     border-radius: 4px;
@@ -47,13 +56,19 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (max-width: 579px) {
-      width: 300px;
+    @media screen and (max-width: 767px) {
+      width: 450px;
     }
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      width: 450px;
+    }
+    // @media screen and (min-width: 480px) and (max-width: 768px) {
+    //   width: 300px;
+    // }
   }
   .join__button {
     display: flex;
-    margin-left: 2%;
+    margin-left: 20px;
 
     align-items: center;
     justify-content: center;
@@ -79,13 +94,17 @@
       background: #188ce8;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
-    @media screen and (max-width: 579px) {
+    @media screen and (max-width: 767px) {
       margin-left: 0;
-      margin-top: 5%;
+      margin-top: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      margin-left: 0;
+      margin-top: 20px;
     }
 
     .join__svg {
-      margin-left: 3%;
+      margin-left: 8px;
     }
   }
 }
