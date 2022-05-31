@@ -2,13 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 50px;
   @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
+    margin-top: 15px;
   }
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     justify-content: space-between;
+    margin-top: 40px;
   }
   .porpfolio-photo__item {
     max-width: 370px;

@@ -252,31 +252,112 @@ li {
   fill: currentColor;
 }
 
-.nav-smoll {
-  position: relative;
-  display: none;
+.nav-smoll__button-open {
   margin-left: auto;
-  z-index: 2;
+  top: 8px;
+  background-color: white;
 }
-@media screen and (max-width: 767px) {
-  .nav-smoll {
-    display: flex;
+@media screen and (min-width: 767px) {
+  .nav-smoll__button-open {
+    display: none;
   }
 }
 
-.nav-smoll__button {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  background-color: white;
+.nav-smoll__button-open__svg:hover,
+.nav-smoll__button-open__svg:focus {
+  fill: var(--akcent);
+}
+
+.nav-smoll {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  top: 0;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  outline: 1px solid tomato;
+}
+@media screen and (min-width: 767px) {
+  .nav-smoll {
+    display: none;
+  }
+}
+.nav-smoll .nav-smoll__button-close {
+  margin-left: auto;
+  padding-top: 21px;
+  padding-right: 21px;
+  background-color: #ffffff;
+}
+.nav-smoll .nav-smoll__button-close:hover, .nav-smoll .nav-smoll__button-close:focus {
+  color: var(--akcent);
+}
+.nav-smoll .nav-smoll__button-close .nav-smoll__button-close__svg {
+  fill: currentColor;
 }
 
 .nav-smoll__site-nav {
-  opacity: 0;
+  margin-bottom: 200px;
+  padding-left: 30px;
+}
+.nav-smoll__site-nav .nav-smoll__site-nav__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+.nav-smoll__site-nav .nav-smoll__site-nav__list {
+  color: #212121;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-smoll__site-nav .nav-smoll__site-nav__list:hover, .nav-smoll__site-nav .nav-smoll__site-nav__list:focus {
+  color: var(--akcent);
 }
 
 .nav-smoll__site-auth {
-  opacity: 0;
+  padding-left: 30px;
+  margin-bottom: 60px;
+}
+.nav-smoll__site-auth .nav-smoll__site-auth__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+.nav-smoll__site-auth .nav-smoll__site-auth__list {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.nav-smoll__site-auth .nav-smoll__site-auth__list:hover, .nav-smoll__site-auth .nav-smoll__site-auth__list:focus {
+  color: var(--akcent);
+}
+.nav-smoll__site-auth .nav-smoll__site-auth__list .nav-smoll__site-auth__svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.nav-smoll__social {
+  display: flex;
+  padding-left: 30px;
+}
+.nav-smoll__social .nav-smoll__social__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.nav-smoll__social .nav-smoll__social__list {
+  color: var(--akcent);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+.nav-smoll__social .nav-smoll__social__list:hover, .nav-smoll__social .nav-smoll__social__list:focus {
+  color: var(--akcent);
 }
 
 .footer {
@@ -471,11 +552,13 @@ li {
 }
 @media screen and (max-width: 767px) {
   .join {
+    margin-top: -20px;
     align-items: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .join {
+    margin-top: -60px;
     align-items: center;
   }
 }
@@ -606,7 +689,7 @@ li {
   transform: translate(-50%, -50%);
 }
 .hero__block .hero__text {
-  width: 100%;
+  width: 696px;
   color: var(--primary-wite-color);
   font-family: "Roboto";
   font-weight: 900;
@@ -660,14 +743,14 @@ li {
 @media screen and (max-width: 767px) {
   .work__item {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .work__item {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     flex-wrap: wrap;
   }
 }
@@ -735,7 +818,7 @@ li {
 }
 
 .photo-title {
-  margin-bottom: -3%;
+  margin-bottom: -40px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -757,8 +840,8 @@ li {
 
 .photo {
   display: flex;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding-top: 94px;
+  padding-bottom: 94px;
   justify-content: space-evenly;
 }
 @media screen and (max-width: 767px) {
@@ -808,13 +891,13 @@ li {
 @media screen and (max-width: 767px) {
   .section-team .section-team.conteiner {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .section-team .section-team.conteiner {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 .section-team .section-team__main {
@@ -958,7 +1041,7 @@ li {
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .clients.conteiner {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 .clients.conteiner .clients__main {
@@ -1047,13 +1130,13 @@ li {
 @media screen and (max-width: 767px) {
   .portfolio-section {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .portfolio-section {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 .portfolio-section .porpfolio-button {
@@ -1073,6 +1156,17 @@ li {
 }
 .portfolio-section .porpfolio-button .porpfolio-button__item:not(:last-child) {
   margin-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-section .porpfolio-button .porpfolio-button__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .portfolio-section .porpfolio-button .porpfolio-button__item:not(:last-child) {
+    justify-content: space-between;
+    margin-right: 8px;
+  }
 }
 .portfolio-section .porpfolio-button .porpfolio-button__list {
   padding: 6px 22px 6px 22px;
@@ -1098,17 +1192,19 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 @media screen and (max-width: 767px) {
   .porpfolio-photo {
     flex-direction: column;
     align-items: center;
+    margin-top: 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .porpfolio-photo {
     justify-content: space-between;
+    margin-top: 40px;
   }
 }
 .porpfolio-photo .porpfolio-photo__item {
@@ -1276,30 +1372,30 @@ li {
 @media screen and (max-width: 767px) {
   .modal-window {
     width: 450px;
-    height: 609px;
+    height: 600px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .modal-window {
     width: 450px;
-    height: 609px;
+    height: 600px;
   }
 }
 .modal-window .modal-window__close-position {
   position: relative;
-  width: 450px;
-  height: 609px;
+  width: 528px;
+  height: 581px;
 }
 @media screen and (max-width: 767px) {
   .modal-window .modal-window__close-position {
     width: 450px;
-    height: 609px;
+    height: 600px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .modal-window .modal-window__close-position {
     width: 450px;
-    height: 609px;
+    height: 600px;
   }
 }
 .modal-window .modal-window__close-position .modal-window__close {
@@ -1323,7 +1419,7 @@ li {
   padding: 40px;
 }
 .modal-window .modal-window__form .modal-window__form__title {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1354,11 +1450,11 @@ li {
 }
 
 .modal-window__input {
-  margin-top: 2%;
+  margin-top: 10px;
 }
 .modal-window__input .modal-window__input__label {
   display: block;
-  margin-bottom: 1%;
+  margin-bottom: 4px;
   color: #757575;
   font-weight: 400;
   font-size: 12px;
@@ -1369,7 +1465,7 @@ li {
   position: relative;
 }
 .modal-window__input .modal-window__input__nested .modal-window__input__in {
-  padding-left: 8%;
+  padding-left: 30px;
   width: 100%;
   height: 40px;
   outline: none;
@@ -1384,7 +1480,7 @@ li {
 }
 .modal-window__input .modal-window__input__nested .modal-window__input__svg {
   position: absolute;
-  left: 3%;
+  left: 13px;
   top: 50%;
   transform: translateY(-50%);
   width: 3%;
@@ -1401,8 +1497,7 @@ li {
 }
 .modal-window__input .modal-window__input__coments {
   display: block;
-  margin-bottom: 2%;
-  padding: 1%;
+  padding: 12px 16px;
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -1483,8 +1578,8 @@ li {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  width: 16px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   padding: 2px;
   border-radius: 2px;
   border: 1px solid black;

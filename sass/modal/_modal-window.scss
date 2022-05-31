@@ -13,24 +13,24 @@
   border-radius: 4px;
   @media screen and (max-width: 767px) {
     width: 450px;
-    height: 609px;
+    height: 600px;
   }
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     width: 450px;
-    height: 609px;
+    height: 600px;
   }
   //Close
   .modal-window__close-position {
     position: relative;
-    width: 450px;
-    height: 609px;
+    width: 528px;
+    height: 581px;
     @media screen and (max-width: 767px) {
       width: 450px;
-      height: 609px;
+      height: 600px;
     }
     @media screen and (min-width: 768px) and (max-width: 1280px) {
       width: 450px;
-      height: 609px;
+      height: 600px;
     }
     .modal-window__close {
       position: absolute;
@@ -58,7 +58,7 @@
   .modal-window__form {
     padding: 40px;
     .modal-window__form__title {
-      margin-bottom: 12px;
+      margin-bottom: 15px;
       font-style: normal;
       font-weight: 700;
       font-size: 20px;

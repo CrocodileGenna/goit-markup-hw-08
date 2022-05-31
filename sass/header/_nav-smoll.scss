@@ -1,22 +1,118 @@
-.nav-smoll {
-  position: relative;
-  display: none;
+// Button Open Maim Meny
+.nav-smoll__button-open {
   margin-left: auto;
-  z-index: 2;
-  @media screen and (max-width: 767px) {
-    display: flex;
-  }
-}
-.nav-smoll__button {
-  position: absolute;
-  right: 10px;
-  top: 5px;
+  top: 8px;
+
   background-color: white;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
   //   outline: 1px splid tomato;
 }
+.nav-smoll__button-open__svg:hover,
+.nav-smoll__button-open__svg:focus {
+  fill: var(--akcent);
+}
+
+// Window Maim Meny
+.nav-smoll {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  top: 0;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #ffffff;
+  outline: 1px solid tomato;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  .nav-smoll__button-close {
+    margin-left: auto;
+    padding-top: 21px;
+    padding-right: 21px;
+    background-color: #ffffff;
+    &:hover,
+    &:focus {
+      color: var(--akcent);
+    }
+    .nav-smoll__button-close__svg {
+      fill: currentColor;
+    }
+    // display: none;
+  }
+}
+
 .nav-smoll__site-nav {
-  opacity: 0;
+  margin-bottom: 200px;
+  padding-left: 30px;
+  .nav-smoll__site-nav__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  .nav-smoll__site-nav__list {
+    color: #212121;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      color: var(--akcent);
+    }
+  }
+
+  // display: none;
 }
 .nav-smoll__site-auth {
-  opacity: 0;
+  padding-left: 30px;
+  margin-bottom: 60px;
+  .nav-smoll__site-auth__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  .nav-smoll__site-auth__list {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    &:hover,
+    &:focus {
+      color: var(--akcent);
+    }
+    .nav-smoll__site-auth__svg {
+      margin-right: 10px;
+      fill: currentColor;
+    }
+  }
+  // display: none;
+}
+.nav-smoll__social {
+  display: flex;
+  padding-left: 30px;
+  .nav-smoll__social__item:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .nav-smoll__social__list {
+    color: var(--akcent);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      color: var(--akcent);
+    }
+  }
+  // display: none;
 }
