@@ -38,9 +38,9 @@
     display: none;
   }
   .nav-smoll__button-close {
-    margin-left: auto;
-    margin-right: 20px;
-    padding-top: 25px;
+    position: absolute;
+    right: 30px;
+    top: 25px;
     background-color: #ffffff;
     &:hover,
     &:focus {
@@ -54,6 +54,7 @@
 }
 
 .nav-smoll__site-nav {
+  margin-top: 50px;
   margin-bottom: 100px;
   padding-left: 30px;
   .nav-smoll__site-nav__item:not(:last-child) {

@@ -59,6 +59,10 @@ li {
   margin: -1px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .conteiner {
   width: 1200px;
   margin-left: auto;
@@ -289,9 +293,9 @@ li {
   }
 }
 .nav-smoll .nav-smoll__button-close {
-  margin-left: auto;
-  margin-right: 20px;
-  padding-top: 25px;
+  position: absolute;
+  right: 30px;
+  top: 25px;
   background-color: #ffffff;
 }
 .nav-smoll .nav-smoll__button-close:hover, .nav-smoll .nav-smoll__button-close:focus {
@@ -302,6 +306,7 @@ li {
 }
 
 .nav-smoll__site-nav {
+  margin-top: 50px;
   margin-bottom: 100px;
   padding-left: 30px;
 }
