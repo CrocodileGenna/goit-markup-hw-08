@@ -20,6 +20,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   z-index: 1;
 
   top: 0;
@@ -27,8 +28,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   background-color: #ffffff;
   outline: 1px solid tomato;
@@ -38,8 +39,8 @@
   }
   .nav-smoll__button-close {
     margin-left: auto;
-    padding-top: 21px;
-    padding-right: 21px;
+    margin-right: 20px;
+    padding-top: 25px;
     background-color: #ffffff;
     &:hover,
     &:focus {
@@ -53,7 +54,7 @@
 }
 
 .nav-smoll__site-nav {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   padding-left: 30px;
   .nav-smoll__site-nav__item:not(:last-child) {
     margin-bottom: 35px;
@@ -74,7 +75,7 @@
 }
 .nav-smoll__site-auth {
   padding-left: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   .nav-smoll__site-auth__item:not(:last-child) {
     margin-bottom: 35px;
   }
@@ -98,6 +99,7 @@
 .nav-smoll__social {
   display: flex;
   padding-left: 30px;
+  margin-bottom: 50px;
   .nav-smoll__social__item:not(:last-child) {
     margin-right: 10px;
     padding-right: 10px;
