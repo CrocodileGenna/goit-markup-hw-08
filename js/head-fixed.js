@@ -1,5 +1,5 @@
 const { height: HeaderHeight } = document
-  .querySelector("Header")
+  .querySelector(".header.conteiner")
   .getBoundingClientRect();
 
-document.body.styles.paddingTop = `${HeaderHeight}px`;
+document.body.main.paddingTop = `${HeaderHeight}px`;
