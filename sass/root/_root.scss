@@ -73,7 +73,11 @@ li {
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid rgb(225, 169, 159); */
-
+  @media screen and (max-width: 480px) {
+    min-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   @media screen and (max-width: 767px) {
     width: 480px;
     padding-left: 15px;
